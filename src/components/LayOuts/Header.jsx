@@ -11,13 +11,28 @@ export const Header = () => {
           <nav>
             <ul className="flex">
               <li>
-                <NavLink to={"/"}>Home</NavLink>
+                <NavLink
+                  to={"/"}
+                  className={({ isActive }) => (isActive ? "active " : "")}
+                >
+                  <span>Home</span>
+                </NavLink>
               </li>
               <li>
-                <NavLink to={"/about"}>About</NavLink>
+                <NavLink to={"/pokedex"}>
+                  <span>Pokemons</span>{" "}
+                </NavLink>
               </li>
               <li>
-                <NavLink to={"/contact"}>Contact</NavLink>
+                <NavLink to={"/about"}>
+                  <span>About</span>{" "}
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to={"/contact"}>
+                  {" "}
+                  <span>Contact</span>
+                </NavLink>
               </li>
             </ul>
           </nav>

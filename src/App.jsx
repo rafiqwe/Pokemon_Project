@@ -4,6 +4,7 @@ import { Home } from "./components/pages/Home";
 import { About } from "./components/pages/About";
 import { Contact } from "./components/pages/Contact";
 import { AppLayOut } from "./components/LayOuts/AppLayOut";
+import { Pokemons } from "./components/pages/Pokemons";
 
 export const App = () => {
   const router = createBrowserRouter([
@@ -14,6 +15,10 @@ export const App = () => {
         {
           path: "/",
           element: <Home />,
+        },
+        {
+          path: "/pokedex",
+          element: <Pokemons />,
         },
         {
           path: "/about",
