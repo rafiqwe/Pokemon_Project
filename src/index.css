@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Playwrite+AU+SA:wght@100..400&display=swap');
+
+/* Reset some default browser styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/* Set a basic font and background for the body */
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  line-height: 1.6;
+}
+
+/* Add some default styling for headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* Basic styling for links */
+a {
+  text-decoration: none;
+}
+
+/* Add some padding to containers */
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+header{
+  height: 100px;
+  color: #FFFFFF;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul{
+  gap:70px;
+}
+nav ul li{
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+nav ul li:hover{
+  color: rgb(196, 229, 233);
+}
