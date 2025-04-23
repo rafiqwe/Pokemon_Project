@@ -12,19 +12,7 @@
 /* Set a basic font and background for the body */
 body {
   font-family: "Kumbh Sans", sans-serif;
-  background: #0f0c29; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #eff3ff;
 
   line-height: 1.6;
 }
@@ -54,7 +42,7 @@ a {
 }
 header{
   height: 100px;
-  color: #FFFFFF;
+  color: #000000;
 }
 .flex{
   display: flex;
@@ -62,7 +50,7 @@ header{
   justify-content: space-between;
 }
 .active span{
-  color: white;
+  color: rgb(10, 182, 240);
 }
 nav ul{
   gap:70px;
@@ -71,18 +59,18 @@ nav ul li span{
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
-  transition: 0.5s;
-  color: #48cae4;
+  transition: 0.2s;
+  color: #000;
 }
 nav ul li span:hover{
-  color: rgb(196, 229, 233);
+  color: rgb(67, 68, 69);
 }
 .hero{
   width: 50%;
   margin: 0 auto;
   text-align: center;
   margin-top: 50px;
-  color: #fff;
+  color: #000;
 }
 .img-container{
   margin: 30px auto;
@@ -121,3 +109,99 @@ nav ul li span:hover{
 .hero-button:hover {
   background-color: #e17055;
 }
+.top_section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.input input::placeholder{
+  color: #535252;
+}
+.input input{
+  width: 650px;
+  height: 50px;
+  padding: 0 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  outline: none;
+}
+.search{
+  padding: 15px 20px;
+  margin-left: 10px;
+  border: none;
+  background: #FF5350;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+.card_section{
+  width: 90%;
+  margin: 40px auto ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.card{
+  width: 360px;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;  
+}
+.type{
+  gap:15px;
+}
+.type span{
+  background: #5092B7;
+  padding: 4px 15px;
+  border-radius: 14px;
+  color: #fff;
+}
+.title{
+  margin-bottom: -15px;
+  font-size: 19px;
+  color: 363131;
+}
+.sub_title p{
+  font-size: 14px;
+}
+.sub_title button{
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  background: #d63031;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.sub_title button:hover{
+  background: #e44c4c;
+}
+.pokemon_img{
+  width: 300px;
+}
+.pokemon_img img{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
