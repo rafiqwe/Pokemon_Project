@@ -4,7 +4,7 @@ import { PokemonCards } from "./PokemonCards";
 export const PokemonCard = () => {
     const data = useLoaderData();
     console.log(data);
-    
+        
   return (
     <>
         <ul className="card_section">

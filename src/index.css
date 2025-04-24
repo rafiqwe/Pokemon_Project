@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Playwrite+AU+SA:wght@100..400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Playwrite+AU+SA:wght@100..400&display=swap");
 
 /* Reset some default browser styles */
 
@@ -40,39 +40,40 @@ a {
   margin: 0 auto;
   padding: 1rem;
 }
-header{
+header {
   height: 100px;
   color: #000000;
 }
-.flex{
+.flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
-.active span{
+.active span {
   color: rgb(10, 182, 240);
 }
-nav ul{
-  gap:70px;
+nav ul {
+  gap: 70px;
 }
-nav ul li span{
+nav ul li span {
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
   transition: 0.2s;
   color: #000;
 }
-nav ul li span:hover{
+nav ul li span:hover {
   color: rgb(67, 68, 69);
 }
-.hero{
+.hero {
   width: 50%;
   margin: 0 auto;
   text-align: center;
   margin-top: 50px;
   color: #000;
 }
-.img-container{
+.img-container {
   margin: 30px auto;
 }
 /* chatGPT css code */
@@ -109,17 +110,17 @@ nav ul li span:hover{
 .hero-button:hover {
   background-color: #e17055;
 }
-.top_section{
+.top_section {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 2rem;
 }
-.input input::placeholder{
+.input input::placeholder {
   color: #535252;
 }
-.input input{
+.input input {
   width: 650px;
   height: 50px;
   padding: 0 30px;
@@ -129,50 +130,54 @@ nav ul li span:hover{
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   outline: none;
 }
-.search{
+.search {
   padding: 15px 20px;
   margin-left: 10px;
   border: none;
-  background: #FF5350;
+  background: #ff5350;
   border-radius: 10px;
   color: #fff;
   font-size: 16px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   cursor: pointer;
 }
-.card_section{
+.card_section {
   width: 90%;
-  margin: 40px auto ;
+  margin: 40px auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 25px;
 }
-.card{
+.card {
   width: 360px;
   padding: 15px;
   border-radius: 20px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;  
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-.type{
-  gap:15px;
+.type {
+  gap: 20px;
 }
-.type span{
-  background: #5092B7;
+.type span {
+  background: #5092b7;
   padding: 4px 15px;
   border-radius: 14px;
   color: #fff;
 }
-.title{
+.title {
   margin-bottom: -15px;
   font-size: 19px;
   color: 363131;
 }
-.sub_title p{
+.down_card{
+  flex-wrap: nowrap;
+}
+.sub_title p {
   font-size: 14px;
 }
-.sub_title button{
+.sub_title button {
   width: 130px;
   height: 40px;
   border-radius: 5px;
@@ -184,24 +189,131 @@ nav ul li span:hover{
   cursor: pointer;
   transition: 0.2s;
 }
-.sub_title button:hover{
+.sub_title button:hover {
   background: #e44c4c;
 }
-.pokemon_img{
+.pokemon_img {
   width: 300px;
 }
-.pokemon_img img{
+.pokemon_img img {
   width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+/*  Loading page css */
+.loading {
+  width: 100%;
+  height: 99vh;
+}
+.loading img {
+  width: 100%;
+  height: 100%;
+}
+/* Pokemon details page css  */
+.pokemon_details {
+  margin: 60px auto;
+  width: 80%;
+  height: 610px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+.details_img {
+  flex-basis: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.details_img img {
+  width: 80%;
+}
+.pokemon_card_details {
+  flex-basis: 39%;
+}
+.id_name span {
+  font-weight: bold;
+  font-size: 15px;
+}
+.id_name {
+  margin-bottom: -20px;
+}
+.id_name h1 {
+  font-weight: bold;
+  color: #000000;
+}
+.detail_type span {
+  text-align: center;
+  padding-top: 0;
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 0.9rem;
+}
+.base__experience {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e17055;
+  border-radius: 0.8rem;
+  padding: 10px 30px;
+  margin-top: 1.2rem;
+  font-size: 1.1rem;
+  color: #000000;
+  font-weight: bold;
+}
+.height_weight {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.height_weight div{
+  height: 38px;
+  border-radius: 5px;
+  background: #98daf3;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 48%;
+}
+.height_weight div span {
+  color: #000000;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.status h1 {
+  font-size: 28px;
+  margin-bottom: 2px;
+}
+.status_boxs{
+  gap: 10px;
+}
+.status_boxs div {
+  background: #80ffdb;
+  padding: 7px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+  flex-basis: 48%;
+}
+.abilities h1{
+  margin-bottom: -4px;
+}
+.go_back button{
+  border: none;
+  background: #e17055;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: 0.2s;
+  width: 100%;
+}
+.go_back button:hover{
+  background: #bb644e;
+}

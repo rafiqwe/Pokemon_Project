@@ -1,13 +1,15 @@
 import { NavLink } from "react-router-dom";
 
 export const PokemonCards = ({ pokemon }) => {
-  const { name, height,id, weight, base_experience, abilities, sprites } = pokemon;
+  const { name,id,sprites } = pokemon;
   return (
     <>
       <li className="card">
         <div className="type_id flex">
           <div className="type flex">
-             <p>{pokemon.types.map((type) => type.type.name).join(", ")}</p> 
+              {pokemon.types.map((type) => {
+                return( <span key={type.type.name}> {type.type.name} </span> )
+              })}
           </div>
           <div className="id">
             <span>#{id}</span>
@@ -22,7 +24,7 @@ export const PokemonCards = ({ pokemon }) => {
               A strange seed was planted on its back at birth. the plant sprouts
               and grows with this pokémon.
             </p>
-            <button> <NavLink to={`/pokedex/${id}`}>Know More</NavLink> </button>
+            <NavLink to={`/pokedex/${id}`}> <button> Know More </button></NavLink>
           </div>
           <div className="pokemon_img">
             <img src={sprites.other.dream_world.front_default} alt="pokemon" />
