@@ -225,6 +225,8 @@ nav ul li span:hover {
 }
 .details_img img {
   width: 80%;
+  height: auto;
+  max-height: 551px;
 }
 .pokemon_card_details {
   flex-basis: 39%;
@@ -234,17 +236,19 @@ nav ul li span:hover {
   font-size: 15px;
 }
 .id_name {
-  margin-bottom: -20px;
+  margin-bottom: -10px;
 }
 .id_name h1 {
   font-weight: bold;
   color: #000000;
 }
+.detail_type{
+  justify-content: normal;
+}
 .detail_type span {
   text-align: center;
   padding-top: 0;
   display: inline-block;
-  margin-right: 10px;
   font-size: 0.9rem;
 }
 .base__experience {
