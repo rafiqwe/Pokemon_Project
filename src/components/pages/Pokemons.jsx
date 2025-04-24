@@ -1,9 +1,15 @@
 import { FaSearch } from "react-icons/fa";
 import { useLoaderData } from "react-router-dom";
 import { PokemonCards } from "../LayOuts/UI/PokemonCards";
+import { useState } from "react";
 export const Pokemons = () => {
+  const [search, setSearch] = useState("");
   const data = useLoaderData();
-  
+
+  // add search functionality
+  const searchData = data.filter((poke) => {
+    return poke.name.toLowerCase().includes(search.toLowerCase());
+  });
   return (
     <>
       <section className="top_section ">
@@ -16,6 +22,8 @@ export const Pokemons = () => {
               <input
                 type="text"
                 placeholder="search etg, ditto or pikachu..."
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
               />
             </div>
             <button className="search">
@@ -25,7 +33,7 @@ export const Pokemons = () => {
         </div>
       </section>
       <ul className="card_section">
-        {data.map((pokemon) => {
+        {searchData.map((pokemon) => {
           return <PokemonCards pokemon={pokemon} key={pokemon.id} />;
         })}
       </ul>
