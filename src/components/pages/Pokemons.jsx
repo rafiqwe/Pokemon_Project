@@ -5,7 +5,9 @@ import { useState } from "react";
 export const Pokemons = () => {
   const [search, setSearch] = useState("");
   const data = useLoaderData();
+  // console.log(data);
 
+  
   // add search functionality
   const searchData = data.filter((poke) => {
     return poke.name.toLowerCase().includes(search.toLowerCase());

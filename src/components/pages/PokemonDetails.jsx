@@ -26,7 +26,7 @@ export const PokemonDetails = () => {
         <div className="pokemon_card_details">
           <div className="top_details">
             <div className="id_name">
-              <span>#0{id}</span>
+              <span>#{id}</span>
               <h1>{name}</h1>
             </div>
             <div className="type flex detail_type">

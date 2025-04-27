@@ -1,6 +1,13 @@
 import { NavLink } from "react-router-dom";
-
+import { FaBars } from "react-icons/fa";
+import { useState } from "react";
 export const Header = () => {
+  const [isClick, setIsClick] = useState(false);
+  const handleClick = () => {
+    setIsClick(!isClick);
+  }
+  console.log(isClick);
+  
   return (
     <>
       <header>
@@ -8,8 +15,8 @@ export const Header = () => {
           <div className="logo">
             <img src="/logo.png" alt="" />
           </div>
-          <nav>
-            <ul className="flex">
+          <nav  className={isClick ? "" : "none"}>
+            <ul className="flex" >
               <li>
                 <NavLink
                   to={"/"}
@@ -36,6 +43,7 @@ export const Header = () => {
               </li>
             </ul>
           </nav>
+          <FaBars onClick={handleClick} className="nav_icon" />
         </div>
       </header>
     </>
