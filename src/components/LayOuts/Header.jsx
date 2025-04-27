@@ -6,7 +6,6 @@ export const Header = () => {
   const handleClick = () => {
     setIsClick(!isClick);
   }
-  console.log(isClick);
   
   return (
     <>

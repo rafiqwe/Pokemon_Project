@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Header } from "./components/LayOuts/Header";
 import { Home } from "./components/pages/Home";
 import { About } from "./components/pages/About";
-import { Contact } from "./components/pages/Contact";
+import { Contact, getFormData } from "./components/pages/Contact";
 import { AppLayOut } from "./components/LayOuts/AppLayOut";
 import { Pokemons } from "./components/pages/Pokemons";
 import { getPokemon } from "./components/API/getPokemon";
@@ -38,6 +38,7 @@ export const App = () => {
         {
           path: "/contact",
           element: <Contact />,
+          action:getFormData,
         },
       ],
     },
